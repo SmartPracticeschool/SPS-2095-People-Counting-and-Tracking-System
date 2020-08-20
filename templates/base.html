@@ -1,0 +1,54 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug 19 11:40:12 2020
+
+@author: sai seravan
+"""
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>People Counter</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static',filename='css/main.css') }}" rel="stylesheet">
+    <style>
+    .bg-dark {
+        background-color: #42678c!important;
+    }
+    #result {
+        color: #0a1c4ed1;
+    }
+    </style>
+    
+<body>
+    <nav class="navbar navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand" href="#">People Counter and Tracker System</a>
+        </div>
+    </nav>
+    <div class="navbar navbar-dark bg-info">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 db">
+            <h3>Flow Estimation</h3>
+            <p>Real-time people flow estimation can be very useful to gain insight on how many people visit a place at any given time . This helps a bussiness better understand its customers and improve customer services and deploy resources on demand which helps the bussiness increase sales , save money and resources and increase customer satisfaction.</p>
+              <img src="{{ url_for('video_feed') }}">
+            </div>
+            <div class="col-sm-4">
+                <div>
+            <img src="https://www.burohappold.com/wp-content/uploads/2020/04/social-distancing_gettystock.jpg" height= "300" width= "300">
+            </div>
+            
+          </div>
+        </div>
+        </div>
+    </div>
+</body>
